@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-red: #D71920;
+    --primary-yellow: #F4B400;
+    --font-hindi: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    color: #171717;
+    background-color: #F7F7F7;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth Marquee ticker animation */
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-ticker {
+  animation: ticker 28s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Glassmorphism and overlay styles */
+.glass-dark {
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

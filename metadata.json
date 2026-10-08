@@ -1,0 +1,6 @@
+{
+  "name": "Betul Talks – News + Advertisement Platform",
+  "description": "Production-ready local news, video reels & advertisement platform for Betul Talks Mediawork Pvt. Ltd. (Betul, Madhya Pradesh)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
